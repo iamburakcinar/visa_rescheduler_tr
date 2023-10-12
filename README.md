@@ -1,20 +1,19 @@
 # visa_rescheduler
-US VISA (ais.usvisa-info.com) appointment re-scheduler - Colombian adaptation
+US VISA (ais.usvisa-info.com) appointment re-scheduler - Turkiye adaptation
 
-## Prerequisites
-- Having a US VISA appointment scheduled already
-- Google Chrome installed (to be controlled by the script)
-- Python v3 installed (for running the script)
-- API token from Pushover and/or a Sendgrid (for notifications)
+## Gereklilikler
+- Mevcutta alınmış bir randevunuz olması gerekiyor.
+- Google Chrome tarayıcıya sahip olmanız gerekiyor.
+- Python v3 kurulu olmalı. https://www.python.org/downloads/ adresinden kurulum sağlayabilirsiniz.
+- Pushover yada Sendgrid 'den alınmış entegrasyon bilgileri. ( Bilgilendirme gönderilmesini istiyorsanız)
 
+## Kurulum
+- `config.ini` dosyasındaki yapılandırma ayarlarını kendi randevu bilgileriniz ve konsolosluk bilgileriniz ile güncelleyin.
+-  `pip3 install -r requirements.txt` komutunu çalıştırarak scriptin çalışması gerekli olan tüm bileşenleri kurulumunu tamamlayın.
 
-## Initial Setup
-- Create a `config.ini` file with all the details required
-- Install the required python packages: `pip3 install -r requirements.txt`
+## Çalıştırma
+- Komut satırından  `python3 visa.py`  komutunu yazmanız yeterli.
+- Script randevu sisteminde müsaitlik olduğunda sizin için bu aralığı seçip size bilgilendirme maili gönderecek.
 
-## Executing the script
-- Simply run `python3 visa.py`
-- That's it!
-
-## Acknowledgement
-Thanks to @yaojialyu for creating the initial script and to @cejaramillof for adapting it to Colombia!
+## Teşekkür.
+@yaojialyu bu uygulamayı yaptığın için teşekkürler.
